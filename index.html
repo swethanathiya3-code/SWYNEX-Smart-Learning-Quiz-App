@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWYNEX Smart Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">SWYNEX <span>Learn</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <p class="tagline">LEARN • PRACTICE • GROW</p>
+        <h1>Learn Coding.<br><span>Build Your Future.</span></h1>
+        <p class="hero-text">
+            Learn HTML, CSS and JavaScript with simple
+            English and Tamil explanations.
+        </p>
+        <a href="#courses" class="main-btn">Start Learning</a>
+    </div>
+
+    <div class="hero-card">
+        <div class="code-icon">&lt;/&gt;</div>
+        <h2>Code Your Ideas</h2>
+        <p>Learn step by step and improve your skills.</p>
+    </div>
+</section>
+
+<section class="courses" id="courses">
+    <p class="section-tag">OUR LEARNING PATH</p>
+    <h2>Choose Your Course</h2>
+    <p>Select a subject and start learning.</p>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <div class="course-icon html-icon">HTML</div>
+            <h3>HTML Basics</h3>
+            <p>Learn webpage structure and HTML elements.</p>
+            <button onclick="openLesson('html')">Start Learning</button>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon css-icon">CSS</div>
+            <h3>CSS Basics</h3>
+            <p>Learn colors, layouts and website design.</p>
+            <button onclick="openLesson('css')">Start Learning</button>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon js-icon">JS</div>
+            <h3>JavaScript Basics</h3>
+            <p>Learn programming and interactive features.</p>
+            <button onclick="openLesson('js')">Start Learning</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="lesson-section" id="lesson">
+    <p class="section-tag">LEARNING CENTER</p>
+    <h2 id="lessonTitle">Choose a Course</h2>
+
+    <div id="lessonContent">
+        <p>Select a course above to see its lesson.</p>
+    </div>
+
+    <button id="startCourseQuizBtn" onclick="startCourseQuiz()" hidden>
+        Start Course Quiz
+    </button>
+</section>
+
+<section class="quiz-section" id="quiz">
+    <p class="section-tag">TEST YOUR KNOWLEDGE</p>
+    <h2>Course Quiz</h2>
+    <p>Choose a course and answer its 10 questions.</p>
+
+    <div class="quiz-box">
+
+        <div class="quiz-info">
+            <span id="questionNumber">No quiz started</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <h3 id="questionText">
+            Select a course and click Start Course Quiz.
+        </h3>
+
+        <div id="options"></div>
+
+        <p id="feedback"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()" hidden>
+            Next Question
+        </button>
+
+        <button id="startQuizBtn" onclick="startCourseQuiz()">
+            Start Quiz
+        </button>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>Keep Learning, Keep Growing!</h2>
+    <p>Practice every day and improve your coding knowledge.</p>
+</section>
+
+<footer>
+    <p>© 2026 SWYNEX Smart Learning & Quiz App</p>
+    <p>Learn in English and Tamil</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

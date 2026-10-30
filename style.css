@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f8fc;
+    color: #20243a;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #242b64;
+}
+
+.logo span {
+    color: #6c63ff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333957;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #20265c, #5146b8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a9a3ff;
+}
+
+.tagline, .section-tag {
+    color: #8b83ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    line-height: 1.8;
+    color: #e2e2f4;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #8b83ff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-card {
+    width: 280px;
+    padding: 40px 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+}
+
+.code-icon {
+    font-size: 65px;
+    font-weight: 800;
+    color: #b9b4ff;
+    margin-bottom: 15px;
+}
+
+.hero-card p {
+    color: #e2e2f4;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+.courses, .lesson-section, .quiz-section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.courses h2, .lesson-section h2, .quiz-section h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.course-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(35,40,80,0.07);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-icon {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.html-icon {
+    background: #fff0e9;
+    color: #e65b25;
+}
+
+.css-icon {
+    background: #e8f1ff;
+    color: #2878d7;
+}
+
+.js-icon {
+    background: #fff8d9;
+    color: #a98500;
+}
+
+.course-card h3 {
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    color: #777d92;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 48px;
+}
+
+button {
+    border: none;
+    background: #6c63ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #5146d8;
+}
+
+.lesson-section {
+    background: white;
+}
+
+#lessonContent {
+    max-width: 750px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background: #f7f8fc;
+    border-radius: 12px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+#lessonContent h3 {
+    margin-bottom: 8px;
+}
+
+.quiz-section {
+    background: #f0efff;
+}
+
+.quiz-box {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(35,40,80,0.07);
+    text-align: left;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    color: #6c63ff;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e6e5f5;
+    border-radius: 10px;
+    margin: 18px 0 25px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background: #6c63ff;
+    transition: 0.3s;
+}
+
+#questionText {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+    background: #f2f2fb;
+    color: #30334b;
+    border: 1px solid #e1e1f0;
+}
+
+.option-btn:hover {
+    background: #e7e5ff;
+    color: #5146d8;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.about {
+    padding: 55px 8%;
+    text-align: center;
+    background: #24295f;
+    color: white;
+}
+
+.about p {
+    margin-top: 12px;
+    color: #d7d7ef;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background: #171b43;
+    color: #d7d7ef;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width: 750px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .courses, .lesson-section, .quiz-section {
+        padding: 55px 6%;
+    }
+
+    .quiz-box {
+        padding: 20px;
+    }
+}
